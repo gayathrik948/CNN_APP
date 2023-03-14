@@ -42,7 +42,6 @@ def create_directories(path_to_directories: list, verbose=True):
         if verbose:
             logger.info(f"created directory at: {path}")
 
-
 @ensure_annotations
 def save_json(path: Path, data: dict):
     """save json data
@@ -69,7 +68,6 @@ def load_json(path: Path) -> ConfigBox:
     logger.info(f"json file loaded succesfully from: {path}")
     return ConfigBox(content)
 
-
 @ensure_annotations
 def save_bin(data: Any, path: Path):
     """save binary file
@@ -80,7 +78,6 @@ def save_bin(data: Any, path: Path):
     joblib.dump(value=data, filename=path)
     logger.info(f"binary file saved at: {path}")
 
-
 @ensure_annotations
 def load_bin(path: Path) -> Any:
     """load binary data
@@ -94,13 +91,12 @@ def load_bin(path: Path) -> Any:
     return data
 
 @ensure_annotations
-def load_bin(path: Path) -> Any:
-    """load binary data
+def get_size(path: Path) -> str:
+    """get size in KB
     Args:
-        path (Path): path to binary file
+        path (Path): path of the file
     Returns:
-        Any: object stored in the file
+        str: size in KB
     """
-    data = joblib.load(path)
-    logger.info(f"binary file loaded from: {path}")
-    return data
+    size_in_kb = round(os.path.getsize(path)/1024)
+    return f"~ {size_in_kb} KB"
