@@ -1,1 +1,1 @@
-# CNN_app
+# deep Classifier project
