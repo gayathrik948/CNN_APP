@@ -132,3 +132,13 @@ dmypy.json
 .vscode
 *.jpg
 *.zip
+artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2023-03-15-20-43-16/validation/events.out.tfevents.1678896576.HOBASA.37000.1.v2
+artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2023-03-15-20-43-16/train/events.out.tfevents.1678893198.HOBASA.37000.0.v2
+artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2023-03-15-22-19-01/validation/events.out.tfevents.1678903607.HOBASA.22324.1.v2
+artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2023-03-15-22-19-01/train/events.out.tfevents.1678898944.HOBASA.22324.0.v2
+artifacts/training/.gitignore
+.gitignore
+.gitignore
+.gitignore
+.gitignore
+.gitignore
